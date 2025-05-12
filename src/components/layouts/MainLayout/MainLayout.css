@@ -1,0 +1,22 @@
+.main-layout {
+  min-height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+  transition: margin-left var(--transition-duration) ease-in-out;
+  padding: 1rem;
+}
+
+.content-expanded {
+  margin-left: var(--sidebar-width);
+}
+
+.content-collapsed {
+  margin-left: var(--sidebar-width-collapsed);
+}
+
+@media (max-width: 768px) {
+  .content-expanded,
+  .content-collapsed {
+    margin-left: 0;
+    padding-left: calc(var(--sidebar-width-collapsed) + 1rem);
+  }
+}

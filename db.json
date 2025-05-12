@@ -1,0 +1,21 @@
+{
+  "bakeryParameters": {
+    "storeStatus": "OPEN",
+    "dailySales": 1250.75,
+    "customerSatisfaction": 4.8,
+    "bakeryName": "Sweet Delights Bakery",
+    "establishedYear": 2012,
+    "kitchenWidth": 450,
+    "kitchenHeight": 12,
+    "menuItems": [
+      "Croissant",
+      "Sourdough Bread",
+      "Cinnamon Roll",
+      "Chocolate Eclair",
+      "Blueberry Muffin"
+    ],
+    "specialtyFlavor": "Vanilla Lavender",
+    "organicIngredients": true,
+    "minimumOrderAmount": 25.0
+  }
+}

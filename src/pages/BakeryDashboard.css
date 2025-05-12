@@ -1,0 +1,324 @@
+/* BakeryDashboard.css */
+
+/* Common styles for container layouts */
+.bakery-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bakery-dashboard-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.bakery-dashboard-header {
+  padding: 24px;
+  background: linear-gradient(to right, #fff3e0, #fff8e1);
+  border-bottom: 1px solid #ffe0b2;
+}
+
+.bakery-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e65100;
+  margin-bottom: 4px;
+}
+
+.bakery-year {
+  color: #f57c00;
+  margin-bottom: 16px;
+}
+
+.bakery-status-container {
+  margin-top: 16px;
+}
+
+.bakery-status-badge {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bakery-status-open {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.bakery-status-closed {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.bakery-dashboard-content {
+  padding: 24px;
+}
+
+.bakery-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .bakery-dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.bakery-data-card {
+  background-color: #fff8e1;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.bakery-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e65100;
+  margin-bottom: 12px;
+}
+
+.bakery-data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.bakery-data-label {
+  color: var(--color-text);
+}
+
+.bakery-data-value {
+  font-weight: 600;
+}
+
+.bakery-sales-value {
+  color: #2e7d32;
+}
+
+.bakery-rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.bakery-rating-value {
+  font-weight: 600;
+  color: #f57c00;
+  margin-right: 8px;
+}
+
+.bakery-star-container {
+  display: flex;
+}
+
+.bakery-star {
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.bakery-star.bakery-filled {
+  color: #ffc107;
+}
+
+.bakery-specialty-badge {
+  background-color: #f8bbd0;
+  color: #c2185b;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bakery-feature-badge {
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bakery-feature-yes {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.bakery-feature-no {
+  background-color: #f5f5f5;
+  color: #616161;
+}
+
+.bakery-subsection-title {
+  font-weight: 600;
+  color: #e65100;
+  margin-bottom: 12px;
+}
+
+.bakery-menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .bakery-menu-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.bakery-menu-item {
+  background-color: white;
+  border: 1px solid #ffe0b2;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bakery-action-container {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.bakery-refresh-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.bakery-refresh-button:hover {
+  background-color: #2980b9;
+}
+
+/* Loading state styles */
+.bakery-loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.bakery-loading-content {
+  text-align: center;
+}
+
+.bakery-spinner {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--color-primary);
+  animation: bakery-spin 1s ease infinite;
+}
+
+@keyframes bakery-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bakery-loading-text {
+  margin-top: 8px;
+}
+
+.bakery-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Error state styles */
+.bakery-error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.bakery-error-content {
+  text-align: center;
+  background-color: #ffebee;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.bakery-error-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c62828;
+  margin-bottom: 8px;
+}
+
+.bakery-error-message {
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.bakery-retry-button {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.bakery-retry-button:hover {
+  background-color: #b71c1c;
+}
+
+/* Empty state styles */
+.bakery-empty-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.bakery-empty-content {
+  text-align: center;
+}
+
+.bakery-empty-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.bakery-load-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.bakery-load-button:hover {
+  background-color: #2980b9;
+}
