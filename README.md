@@ -1,6 +1,6 @@
 # React example application
 
-TA demonstration application showcasing TypeScript React component implementation patterns.
+A demonstration application showcasing TypeScript React component implementation patterns.
 
 ## Overview
 
