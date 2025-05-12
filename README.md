@@ -12,9 +12,13 @@ Mock Data API: Utilizes db.json for simulated backend responses
 Error Handling: Includes random error simulation (10% probability) to demonstrate real-world error handling patterns
 SPA Architecture: Full client-side routing implementation
 
-### Technical Note
+### Installation
 
-This project prioritizes functionality and architectural patterns over visual design. Minimal CSS customization has been applied to maintain focus on the React implementation details.
+First navigate to the project root directory and install dependencie:
+
+```
+npm install
+```
 
 ### Run the application
 
@@ -29,3 +33,7 @@ Then in another terminal:
 ```
 npm run dev
 ```
+
+### Technical Note
+
+This project prioritizes functionality and architectural patterns over visual design. Minimal CSS customization has been applied to maintain focus on the React implementation details.
